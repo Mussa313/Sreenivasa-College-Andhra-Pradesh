@@ -8,7 +8,97 @@ senate -->
 <head>
     <link rel="icon" href="../../logo.jpeg">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- deen 
+student representation
+other Administration
+senate -->
+
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../../logo.jpeg">
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="Director.css">
+    <title>Sreenivasa | Director Message</title>
+</head>
+
+<body>
+    <div class="navigationDiv">
+        <a href="../Senate/senate.html"><strong>Senate</strong></a>
+        <a href="../Board of Governors/Board of Governors.html"><strong>Board of Governors</strong></a>
+        <a href="Director.html"><strong>Director</strong></a>
+        <a href="../Student Representation/Student Representation.html"><strong>Student representation</strong></a>
+    </div>
+    <div class="contents-wrapper">
+        <div>
+            <h1><u> Director's Message</u></h1>
+            <img src="Director.jpg" alt="Director Photo">
+        </div>
+        <div class="message">
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugi
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugidolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugi
+            <div class="thanks_message">
+                <p>Regards</p>
+                <strong>Dr. Manmohan Singh
+                    <br>Director Sreenivasa College
+                    <br>New Delhi</p></strong>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Scripts Starts-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script>
+        $(document).on('click', function (e) {
+            var
+                $popover,
+                $target = $(e.target);
+
+            //do nothing if there was a click on popover content
+            if ($target.hasClass('popover') || $target.closest('.popover').length) {
+                return;
+            }
+
+            $('[data-toggle="popover"]').each(function () {
+                $popover = $(this);
+
+                if (!$popover.is(e.target) &&
+                    $popover.has(e.target).length === 0 &&
+                    $('.popover').has(e.target).length === 0) {
+                    $popover.popover('hide');
+                } else {
+                    //fixes issue described above
+                    $popover.popover('toggle');
+                }
+            });
+        })
+
+    </script>
+</body>
+
+</html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Director.css">
     <title>Sreenivasa | Director Message</title>
