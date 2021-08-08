@@ -3,8 +3,9 @@
 <head>
     <link rel="icon" href="../../logo.jpeg">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <title>Sreenivasa | Student representation</title>
     <link rel="stylesheet" href="Student Representation.css">
 </head>
@@ -19,7 +20,7 @@
         </div>
         <!-- Contents starts here -->
         <h2 class="content">
-            <h2 style="text-align: center;"><u> Student's Representativel</u></h2>
+            <h2 style="text-align: center;"><u> Student's Representatives</u></h2>
             It is the principal students body of the institue. It is responsible for
             maintenance, standards and smooth functioning of college various activities and will represent students at
             the instituute level in various activities, it is also responsible for decision making of college, hostels
@@ -126,6 +127,40 @@
     </div>
     <br>
     <br>
+
+    <!--Scripts Starts-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script>
+        $(document).on('click', function (e) {
+            var
+                $popover,
+                $target = $(e.target);
+
+            //do nothing if there was a click on popover content
+            if ($target.hasClass('popover') || $target.closest('.popover').length) {
+                return;
+            }
+
+            $('[data-toggle="popover"]').each(function () {
+                $popover = $(this);
+
+                if (!$popover.is(e.target) &&
+                    $popover.has(e.target).length === 0 &&
+                    $('.popover').has(e.target).length === 0) {
+                    $popover.popover('hide');
+                } else {
+                    //fixes issue described above
+                    $popover.popover('toggle');
+                }
+            });
+        })
+
+    </script>
 </body>
 
 </html>
