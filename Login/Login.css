@@ -1,0 +1,99 @@
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: sans-serif, Arial, Helvetica, sans-serif;
+   background-color: #D7C49EFF;
+}
+
+.box {
+   width: 30rem;
+   padding: 3rem;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: rgb(115, 166, 233);
+   border-radius: 1rem;
+   box-shadow: .7rem .7rem 2rem rgb(56, 56, 56);
+}
+
+h1 {
+   position: absolute;
+   top: 3rem;
+   left: 14rem;
+   color: blue;
+   font-weight: bold;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+   display: block;
+   padding: .5rem;
+   margin: 2rem auto;
+   text-align: center;
+   border: .2px solid goldenrod;
+   padding: 1rem;
+   width: 15rem;
+   border-radius: 2rem;
+   /* color: white; */
+   outline: none;
+   transition: width .5s;
+}
+
+.box input[type="text"]:hover,
+.box input[type="password"]:hover {
+   width: 20rem;
+}
+
+.box input[type="button"] {
+   display: block;
+   padding: 1rem 2rem;
+   margin: auto;
+   color: white;
+   background: blue;
+   border: .2rem solid goldenrod;
+   border-radius: 1rem;
+   transition: padding .3s;
+}
+
+.box input[type="button"]:hover {
+   color: white;
+   background: blue;
+   cursor: pointer;
+   padding: 1rem 3rem;
+}
+
+#bottomlink {
+   text-decoration: none;
+   color: blue;
+   padding: 1rem;
+   font-size: 1.5rem;
+}
+
+#bottomlink:hover {
+   font-size: 1.5rem;
+   color: blue;
+}
+
+
+@media(max-width:998px) {
+   html {
+      font-size: 55%;
+
+   }
+}
+
+@media(max-width:668px) {
+   html {
+      font-size: 45%;
+
+   }
+}
+
+@media(max-width:400px) {
+   html {
+      font-size: 35%;
+   }
+}

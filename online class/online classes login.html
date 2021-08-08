@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sreenivasa | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="med ia css.css">
+    <link rel="icon" href="../logo.jpeg">
+
+    <style>
+        body {
+            font-family: sans-serif, Arial, Helvetica, sans-serif;
+            background-color: #D7C49EFF;
+        }
+
+        .box img {
+            width: 5rem;
+            height: 7rem;
+        }
+
+        .box {
+            width: 30rem;
+            padding: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgb(115, 166, 233);
+            border-radius: 10px;
+            box-shadow: .7rem .7rem 2rem blue;
+
+        }
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            top: 3rem;
+            font-weight: bold;
+            left: 10rem;
+            font-size: 3rem;
+            font-family: "Times New Roman";
+            color: blue;
+        }
+
+        .box input[type="text"],
+        .box input[type="password"] {
+            background: white;
+            display: block;
+            padding: .5rem;
+            margin: 2rem auto;
+            text-align: center;
+            border: .2px solid goldenrod;
+            padding: 1rem;
+            width: 20rem;
+            border-radius: 2rem;
+            /* color: blue; */
+            outline: none;
+            transition: width 0.5s;
+        }
+
+        .box input[type="text"]:hover,
+        .box input[type="password"]:hover {
+            width: 23rem;
+        }
+
+        .box input[type="button"] {
+            display: block;
+            padding: 1rem 2rem;
+            margin: auto;
+            color: white;
+            background: blue;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            transition: padding .3s;
+        }
+
+        .box input[type="button"]:hover {
+            color: white;
+            background: blue;
+            cursor: pointer;
+            padding: 1rem 3rem;
+        }
+
+        #bottomlink {
+            text-decoration: none;
+            color: blue;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
+        #bottomlink:hover {
+            font-size: 1.5rem;
+            color: blue;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        @media(max-width:998px) {
+            html {
+                font-size: 55%;
+
+            }
+        }
+
+        @media(max-width:668px) {
+            html {
+                font-size: 45%;
+
+            }
+        }
+
+        @media(max-width:400px) {
+            html {
+                font-size: 35%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="4.jpg" alt="background-image" class="background_img">
+         -->
+    <form class="box" action="#">
+        <a href="index.html"> <img src="du logo.jpg" alt="college logo"></a>
+        <h1>Class Login</h1>
+
+        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="username" placeholder="Subject Code">
+        <input type="password" name="password" placeholder="password">
+        <a href=" https://meet.google.com/ohs-xpqw-tqq"><input type="button" name="submit" value="Login"></a>
+        <a id="bottomlink" href="online classes signup.html"><u>New User</u></a>
+    </form>
+</body>
+
+</html>
