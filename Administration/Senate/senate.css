@@ -1,8 +1,8 @@
 /* *General Styles */
 
-.primary-color{
-	color:rgb(15,108,107) !important;
-}
+/* .primary-color{
+	/* color:rgb(15,108,107) !important; */
+/* } */ */
 
 strong{
 	font-weight: bold;
@@ -30,8 +30,6 @@ Navigation
 	 background-color: rgb(8, 8, 151);
 	 text-align: center;
 	 width: 100%;
-     top: 0;
-     left: 0;
 	 text-decoration: underline;
 }
 .navigationDiv a{
@@ -52,9 +50,12 @@ Navigation
 	border-radius: 8px;
 }
 
-/*********
+h2{
+	text-align: center !important;
+}
+/***************
 *Wrappers
-*********/
+****************/
 
 .wrapper{
 	min-height: 100vh;
@@ -76,14 +77,22 @@ Navigation
 }
 
 .contents-wrapper .content{
-	padding-left: 3rem;
-	padding-right: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.carousel-items{
+	overflow: hidden;
+	border: 3px solid rgb(15,108,107);
+	border-bottom: 0;
+	border-top: 0;
 }
 
 
-/* ******
+/* ************
 table
-****** */
+*********** */
+
 
 .table{
     /* text-align: center; */
